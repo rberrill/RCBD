@@ -8,11 +8,13 @@
             get_template_part("content", "search");
         }
         ?>
+        <!-- End div primaryContent -->
+        <aside class="span-6 pull-18">
+            <div id="sidebarContent">
+                <?php get_sidebar(); ?>
+            </div>
+        </aside>
     </div>
-    <!-- End div primaryContent -->
-    <aside>
-        <?php get_sidebar(); ?>
-    </aside>
 </div>
 <!-- End div contentWrapper -->
 <?php get_footer(); ?>

@@ -14,8 +14,13 @@ body {
     font-family:Helvetica, Arial, sans-serif;
 }
 
-a {
+#primaryContent a {
     text-decoration: none;
+    color: #8bc63f;
+    text-shadow: -0.75px -0.75px white, 0.75px 0.75px #333;
+}
+
+h6 a, h5 a, h4 a, h3 a, h2 a, h1 a {
 }
 
 div#contentWrapper {
@@ -26,18 +31,20 @@ div#header {
     height: 54px;
     width: 970px;
     margin: 0 auto;
+    position: relative;
 }
 
 div#headerSlider {
     height: 504px;
     width: 970px;
     margin: 0 auto;
+    position: relative;
 }
 
 div#headerBackground {
     height: 56px;
     background-color: #656565;
-    position: relative;
+    position: absolute;
     top: -40px;
     left: 10px;
 }
@@ -45,7 +52,7 @@ div#headerBackground {
 div#navBar {
     background-color: #2b2d2e;
     color: #dddddd;
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 36px;
     top: 18px;
@@ -84,7 +91,7 @@ div#navBar ul li a {
     border: 1px solid #2b2d2e;
     background: #2b2d2e;
     background: rgb(43,45,36);
-    background: rgba(43,45,36,0.5);
+    background: rgba(43,45,36,0.75);
     text-decoration: none;
     color: #DDDDDD;
 }
@@ -100,9 +107,9 @@ div#sliderContainer {
     background-image: url('img/slider_control_bg.png');
     background-position: bottom;
     background-repeat: repeat-x;
-    position: relative;
+    position: absolute;
     height: 100%;
-    top: -37px;
+    left: 10px;
 }
 
 div.slide {
@@ -122,8 +129,8 @@ div#navWrap {
     top: -199;
 }
 
- a.prev, a.next {
-    position: relative;
+a.prev, a.next {
+    position: absolute;
 }
 
 a.prev {
@@ -138,27 +145,23 @@ a.next {
 div.prev, div.next {
     height: 465px;
     width: 100px;
-    position: relative;
+    position: absolute;
     background:transparent url('img/spacer.png') 0 0 repeat;
+    bottom: 36px;
+    z-index: 10;
 }
 
 div.prev {
-    left:0px;
-    bottom: 465px;
 }
 
 div.next {
     right: 0px;
-    left: 850px;
-    bottom: 930px;
 }
 
 .pagination {
-    margin:26px auto 0;
-    width:59px;
+    margin: 14px auto 0;
+    width:68px;
     list-style-type: none;
-    position: relative;
-    bottom: 941px;
 }
 
 .pagination li {
@@ -168,9 +171,9 @@ div.next {
 
 .pagination li a {
     display:block;
-    width:12px;
+    width:15px;
     height:0;
-    padding-top:12px;
+    padding-top:15px;
     background-image: url('img/circle.png');
     background-position:0 0;
     float:left;
@@ -192,4 +195,26 @@ div.slides_container {
 
 div#slides {
     height: 504px;
+}
+
+#primaryContent h1 {
+    margin: 0;
+}
+
+article h1 {
+    background-color: transparent !important;
+}
+
+article {
+    margin: 0 0 10px 10px;
+}
+
+#pageHeader {
+    background-color: #656565;
+}
+
+#pageHeader h1 {
+    color: #E3E3E3;
+    font-size: 50px;
+    padding: 10px;
 }

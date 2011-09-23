@@ -10,9 +10,6 @@
         ?>
     </div>
     <!-- End div primaryContent -->
-    <aside>
-        <?php get_sidebar(); ?>
-    </aside>
 </div>
 <!-- End div contentWrapper -->
 <?php get_footer(); ?>
