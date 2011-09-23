@@ -1,0 +1,195 @@
+/*
+ * Theme Name: RCBDesigns
+ * Theme URI: http://www.rcbdesigns.net
+ * Description: Blank Wordpress Theme with Blueprint CSS template 
+ * Version: 0.1.0
+ * Author: Rich Berrill
+ * Author URI: http://www.rcbdesigns.net
+ * Tags: blank, blueprint, blueprint css
+ * File: style.css
+*/
+
+body {
+    background-color: #393939;
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+div#contentWrapper {
+    background-color: #FFFFFF;
+}
+
+div#header {
+    height: 54px;
+    width: 970px;
+    margin: 0 auto;
+}
+
+div#headerSlider {
+    height: 504px;
+    width: 970px;
+    margin: 0 auto;
+}
+
+div#headerBackground {
+    height: 56px;
+    background-color: #656565;
+    position: relative;
+    top: -40px;
+    left: 10px;
+}
+
+div#navBar {
+    background-color: #2b2d2e;
+    color: #dddddd;
+    position: relative;
+    width: 100%;
+    height: 36px;
+    top: 18px;
+    z-index: 40;
+}
+
+div#navBar ul {
+    list-style-type: none;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-left: 65px;
+    text-transform: uppercase;
+}
+
+div#navBar ul li {
+    display: inline;
+}
+
+div#navBar ul li a {
+    line-height: 36px;
+    margin-right: 8px;
+    margin-left: 8px;
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+.sub-menu li {
+    height: 36px;
+}
+
+.sub-menu li a {
+    line-height: 36px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border: 1px solid #2b2d2e;
+    background: #2b2d2e;
+    background: rgb(43,45,36);
+    background: rgba(43,45,36,0.5);
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+div.headerLogo img {
+    height: 28px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+div#sliderContainer {
+    background-color: #656565;
+    background-image: url('img/slider_control_bg.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    position: relative;
+    height: 100%;
+    top: -37px;
+}
+
+div.slide {
+    height: 465px;
+}
+
+div.headerLogo {
+    float: left;
+}
+
+div#navWrap {
+    float:left;
+}
+
+.sf-menu ul {
+    position: absolute;
+    top: -199;
+}
+
+ a.prev, a.next {
+    position: relative;
+}
+
+a.prev {
+    left: 52px;
+    top: 226px;
+}
+
+a.next {
+    top: 226px;
+}
+
+div.prev, div.next {
+    height: 465px;
+    width: 100px;
+    position: relative;
+    background:transparent url('img/spacer.png') 0 0 repeat;
+}
+
+div.prev {
+    left:0px;
+    bottom: 465px;
+}
+
+div.next {
+    right: 0px;
+    left: 850px;
+    bottom: 930px;
+}
+
+.pagination {
+    margin:26px auto 0;
+    width:59px;
+    list-style-type: none;
+    position: relative;
+    bottom: 941px;
+}
+
+.pagination li {
+    float:left;
+    margin:0 3px;
+}
+
+.pagination li a {
+    display:block;
+    width:12px;
+    height:0;
+    padding-top:12px;
+    background-image: url('img/circle.png');
+    background-position:0 0;
+    float:left;
+    overflow:hidden;
+}
+
+.pagination li.current a {
+    background-image: url('img/circle_current.png');
+}
+
+.pagination li a:hover {
+    background-image: url('img/circle_hover.png');
+    background-position:0 0;
+}
+
+div.slides_container {
+    width: 965px;
+}
+
+div#slides {
+    height: 504px;
+}
