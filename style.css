@@ -16,15 +16,18 @@ body {
 
 #primaryContent a {
     text-decoration: none;
-    color: #8bc63f;
-    text-shadow: -0.75px -0.75px white, 0.75px 0.75px #333;
+    color: green;
+}
+
+#primaryContent a:hover {
+    border-bottom: 2px dotted green;
 }
 
 h6 a, h5 a, h4 a, h3 a, h2 a, h1 a {
 }
 
 div#contentWrapper {
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 
 div#header {
