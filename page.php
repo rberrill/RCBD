@@ -14,6 +14,7 @@
                 <?php get_sidebar(); ?>
             </div>
         </aside>
+        <div class="clearfix"></div>
     </div>
 </div>
 <!-- End div contentWrapper -->

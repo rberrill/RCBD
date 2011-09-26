@@ -14,13 +14,13 @@ body {
     font-family:Helvetica, Arial, sans-serif;
 }
 
-#primaryContent a {
+a {
     text-decoration: none;
     color: green;
 }
 
-#primaryContent a:hover {
-    border-bottom: 2px dotted green;
+a:hover {
+    color: #529214;
 }
 
 h6 a, h5 a, h4 a, h3 a, h2 a, h1 a {
@@ -220,4 +220,135 @@ article {
     color: #E3E3E3;
     font-size: 50px;
     padding: 10px;
+}
+
+#introContent {
+    padding-top: 18px;
+    color: #7c7c7c;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.introBlock p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.introBlock h4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #484849;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.introBlock img {
+    margin: 0 0 5px 5px;
+    float: right;
+}
+
+.portfolioSlide {
+    height: 148px;
+    background-color: #529214;
+    margin: 18px 0 10px 0;
+}
+
+#portfolioInfo {
+    padding-top: 18px;
+}
+
+#portfolioInfo p {
+    padding-right: 10px;
+}
+
+#portfolioInfo h3 {
+    padding-right: 10px;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+a.button , span.button, #button_submit, .search_button { 
+    display: inline-block; 
+    padding: 7px 9px; 
+    font-size: 12px; 
+    line-height:1; 
+    color: #6e6e6e; 
+    text-shadow: 1px 1px 0 #FFFFFF; 
+    background: #ececec url('img/button_arrow.png') no-repeat 94% 50%; 
+    white-space: nowrap; 
+    overflow: visible; 
+    cursor: pointer; 
+    text-decoration: none; 
+    border: 1px solid #CACACA; 
+    -webkit-border-radius: 2px; 
+    -moz-border-radius: 2px; 
+    -webkit-background-clip: padding-box; 
+    border-radius: 2px; 
+    outline: none; 
+    position: relative; 
+    zoom: 1; 
+    display: inline; 
+    font-family:Arial, Helvetica, sans-serif; 
+    padding-right:30px; 
+}
+
+a.button.primary { 
+    font-weight: bold 
+}
+
+#button_submit, .search_button { 
+    -webkit-box-shadow: 0px 1px 3px #d4d4d4; 
+    -moz-box-shadow: 0px 1px 3px #d4d4d4; 
+    -o-box-shadow: 0px 1px 3px #d4d4d4; 
+    box-shadow: 0px 1px 3px #d4d4d4;
+}
+
+a.button:hover, #button_submit:hover, .search_button:hover { 
+    color: #3C3C3D; 
+    border-color: #aaa; 
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 #FFFFFF; 
+    background-position: 0 -40px; 
+    background: #f9f9f9 url('img/button_arrow.png') no-repeat 94% 50%; 
+}
+
+a.button:active, a.button.active, #button_submit:active, .search_button:active { 
+    background-position: 0 -81px; 
+    border-color: #aaa; 
+    background: #f9f9f9 url('img/button_arrow.png') no-repeat 94% 50%; 
+    color: #3C3C3D; 
+    text-shadow: none; 
+}
+
+a.button:active { 
+    top: 1px 
+}
+
+#primaryContent {
+    border-bottom: 2px solid #dcdcdc;
+}
+
+#footerContent {
+    background: #FFFFFF url('img/footer_bg.png');
+    color: #7c7c7c;
+    padding-top: 18px;
+}
+
+#footerContent h5{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform:uppercase; 
+    letter-spacing:2px; 
+    text-shadow: 0px 1px 0 #fff; 
+    font-size:12px;
+    color: #484849;
+}
+
+#footerContent p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.introLink p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
