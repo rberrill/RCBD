@@ -87,7 +87,7 @@ div#navBar ul li a {
 }
 
 .sub-menu {
-    top: 25px;
+    top: 24px;
     left: -65px;
     height: auto;
     width: 225px;
@@ -445,7 +445,7 @@ a.button:active {
     color:#b6b6b6; 
     text-transform:uppercase; 
     font-size:11px; 
-    margin-bottom:10px; 
+    margin-bottom:5px; 
     display:block;
 }
 
@@ -462,9 +462,8 @@ a.button:active {
     padding-right: 10px;
 }
 
-#pageContent article .wp-post-image {
+article .wp-post-image {
     float: left;
     padding-right: 10px;
     padding-top: 10px;
 }
-

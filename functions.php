@@ -26,7 +26,7 @@ function getTemplateName() {
 if (function_exists("add_theme_support")) {
     add_theme_support('post-thumbnails');
     add_image_size('home-page-large', 200, 200, true);
-    add_image_size('home-page-small', 100, 100, true);
+    add_image_size('home-page-small', 75, 75, true);
     add_image_size('home-page-intro', 50, 50, true);
     add_image_size('home-page-portfolio', 190, 148, true);
 }
@@ -94,3 +94,9 @@ function add_ie_html5_shim () {
     echo '<![endif]-->';
 }
 add_action('wp_head', 'add_ie_html5_shim');
+
+function new_excerpt_more($more) {
+       global $post;
+	return '<p style="margin-top:-18px"><a href="'. get_permalink($post->ID) . '" class="learnMore">Read More</a></p>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

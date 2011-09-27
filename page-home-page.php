@@ -88,32 +88,20 @@
         </div>
         <div id="onTheBlog" class="span-11 last">
             <h3>From the Blog</h3>
-            <article>
-                <h4>
-                    <a href="#">
-                        This is the first article.
-                    </a>
-                </h4>
-                <span class="authorMeta">
-                    March 18th, 2010 By John Doe
-                </span>
-                <p>
-                    Dis eu neque nulla tincidunt, cursus ac euismod sodales eros vestibulum, at nam id tincidunt in elementum nibh, amet donec ac justo nullam vitae pretium. Felis vel suspendisse, ante cum suspendisse convallis nulla in sapien, rutrum luctus commodi libero elit tincidunt.
-                </p>
-            </article>
-            <article>
-                <h4>
-                    <a href="#">
-                        This is the first article.
-                    </a>
-                </h4>
-                <span class="authorMeta">
-                    March 18th, 2010 By John Doe
-                </span>
-                <p>
-                    Sem libero, vel et adipiscing interdum ipsum vivamus tortor, odio dolor, neque nulla elementum, donec pretium nibh. Sed massa, ante vitae id duis eros dui, pellentesque eget rem et, dis eu mollis cras. Enim euismod ullamcorper semper per. Enim est nunc auctor pretium neque nisl, risus eget ut dolor, quisque risus amet et proin ut turpis, cras vitae, sed lectus placerat per auctor rhoncus.
-                </p>
-            </article>
+                <?php
+                global $thumbnailSize;
+                $thumbnailSize="home-page-small";
+                global $getExcerpt;
+                $getExcerpt = true;
+                $args = array(
+                    'posts_per_page' => 2,
+                );
+                $myposts = get_posts($args);
+                foreach ($myposts as $post) {
+                    setup_postdata($post);
+                    get_template_part("content", "loop");
+                }
+                ?>
             <p>
                 <a href="#" class="button">More From the Blog</a>
             </p>
