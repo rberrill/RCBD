@@ -25,8 +25,10 @@ function getTemplateName() {
 
 if (function_exists("add_theme_support")) {
     add_theme_support('post-thumbnails');
-    add_image_size('home-page-large', 300, 300, true);
+    add_image_size('home-page-large', 200, 200, true);
     add_image_size('home-page-small', 100, 100, true);
+    add_image_size('home-page-intro', 50, 50, true);
+    add_image_size('home-page-portfolio', 190, 148, true);
 }
 
 register_nav_menu('primary', 'Primary Menu');

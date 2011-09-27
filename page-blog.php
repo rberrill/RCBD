@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template Name: Blog 
+ */
+?>
 <?php get_header(); ?>
 <div id="contentWrapper" class="container">
     <div id="primaryContent">
@@ -9,7 +14,7 @@
         <div id="pageContent" class="span-18 push-6 last">
             <?php
             if (have_posts()) {
-                get_template_part("content", "page");
+                get_template_part("content", "blogpage");
             } else {
                 get_template_part("content", "search");
             }

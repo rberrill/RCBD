@@ -12,6 +12,7 @@
 body {
     background-color: #393939;
     font-family:Helvetica, Arial, sans-serif;
+    color: #7c7c7c;
 }
 
 a {
@@ -69,10 +70,12 @@ div#navBar ul {
     padding: 0;
     margin-left: 65px;
     text-transform: uppercase;
+    position: absolute;
 }
 
 div#navBar ul li {
     display: inline;
+    position: relative;
 }
 
 div#navBar ul li a {
@@ -83,20 +86,37 @@ div#navBar ul li a {
     color: #DDDDDD;
 }
 
-.sub-menu li {
-    height: 36px;
+.sub-menu {
+    top: 25px;
+    left: -65px;
+    height: auto;
+    width: 225px;
+    position: relative;
 }
 
-.sub-menu li a {
-    line-height: 36px;
-    margin-right: 8px;
-    margin-left: 8px;
+.sub-menu li ul {
+    position: absolute;
+    left: 85px;
+    top: -1px;
+}
+
+.sub-menu li {
+    display: list-item;
+    float: left;
+    width: 100%;
     border: 1px solid #2b2d2e;
     background: #2b2d2e;
     background: rgb(43,45,36);
     background: rgba(43,45,36,0.75);
     text-decoration: none;
     color: #DDDDDD;
+}
+
+.sub-menu li:hover {
+    background: #2b2d2e;
+}
+
+.sub-menu li a {
 }
 
 div.headerLogo img {
@@ -125,11 +145,6 @@ div.headerLogo {
 
 div#navWrap {
     float:left;
-}
-
-.sf-menu ul {
-    position: absolute;
-    top: -199;
 }
 
 a.prev, a.next {
@@ -264,6 +279,7 @@ article {
     padding-right: 10px;
     font-size: 18px;
     margin-bottom: 18px;
+    color: #484849;
 }
 
 a.button , span.button, #button_submit, .search_button { 
@@ -324,7 +340,6 @@ a.button:active {
 }
 
 #primaryContent {
-    border-bottom: 2px solid #dcdcdc;
 }
 
 #footerContent {
@@ -352,3 +367,104 @@ a.button:active {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.learnMore{ 
+    background: url('img/right_arrow.png') no-repeat right 0em; 
+    padding-right:20px; 
+    padding-top: 1px;
+}
+
+.portfolioSlideNav {
+    float: right;
+}
+
+.portfolioSliderPrev { 
+    background:url('img/portfolio_prev.png') no-repeat;
+    width:19px;
+    height:19px;
+    display:block;
+    float:left;
+    text-indent: -99999px;
+    margin-right:2px;
+}
+
+.portfolioSliderNext { 
+    background:url('img/portfolio_next.png') no-repeat; 
+    width:19px; 
+    height:19px;
+    display:block; 
+    text-indent: -99999px;
+    float:left;  
+}
+
+#testimonial {
+    padding-left: 40px;
+}
+
+#testimonial blockquote {
+    background-color: #f2f2f2;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    padding: 30px;
+    margin: 0;
+    background-image: url('img/blockquote.png');
+    background-repeat: no-repeat;
+}
+
+#testimonial blockquote p { 
+    color:#9a9a9a; 
+    font-size:14px;  
+    margin-bottom:0; 
+    text-shadow: 0px 1px 0 #fff; 
+    line-height:22px; 
+}
+
+#onTheBlog {
+    padding-left: 40px;
+}
+
+#contentWrapper {
+    border-bottom: 2px solid #dcdcdc;
+}
+
+#subContent {
+    padding-bottom: 18px;
+}
+
+#subContent p {
+}
+
+#subContent h3 {
+    color: #484849;
+}
+
+.authorMeta {
+    color:#b6b6b6; 
+    text-transform:uppercase; 
+    font-size:11px; 
+    margin-bottom:10px; 
+    display:block;
+}
+
+#onTheBlog h4, #pageContent article h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#onTheBlog article, #pageContent article {
+    margin-left: 0;
+}
+
+#pageContent article {
+    padding-right: 10px;
+}
+
+#pageContent article .wp-post-image {
+    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+

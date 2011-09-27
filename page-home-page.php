@@ -25,21 +25,21 @@
         <div class="clearfix"></div>
         <div class="introLink span-8">
             <p>
-                <a href="#">
+                <a href="#" class="learnMore">
                     Learn More
                 </a>
             </p>
         </div>
         <div class="introLink span-8">
             <p>
-                <a href="#">
+                <a href="#" class="learnMore">
                     Learn More
                 </a>
             </p>
         </div>
         <div class="introLink span-8 last">
             <p>
-                <a href="#">
+                <a href="#" class="learnMore">
                     Learn More
                 </a>
             </p>
@@ -49,6 +49,11 @@
     <div id="primaryContent">
         <div id="homepagePortfolio">
             <div id="portfolioInfo" class="push-1 span-5">
+                <div style="float:right">
+                    <a class="portfolioSliderPrev" href="#">&lt;</a>
+                    <a class="portfolioSliderNext" href="#">&gt;</a>
+                    <br clear="all" />
+                </div>
                 <h3>Portfolio</h3>
                 <p>
                     Semper ante wisi ac nisl nec augue, justo dapibus taciti morbi nunc fringilla adipiscing, magna suspendisse varius, rutrum duis lacinia et tortor posuere.
@@ -71,15 +76,49 @@
             </div>
             <div class="clearfix"></div>
         </div>
-        <p>
-            Semper ante wisi ac nisl nec augue, justo dapibus taciti morbi nunc fringilla adipiscing, magna suspendisse varius, rutrum duis lacinia et tortor posuere. Aliquam suscipit per fugiat dui nam turpis, in suscipit aliquam, neque maecenas, dolor sem habitasse facilisis maecenas vitae magna, nunc nec aliquet irure. Egestas lectus ligula ipsum lacinia ut eget, sollicitudin dignissim sit urna nunc nunc, quam in fusce sed velit et ac, sit urna vivamus elementum mi quis, quam euismod risus aliquet. Maecenas in a. Dictum lorem.
-        </p>
-        <p>
-            Imperdiet felis, velit massa sagittis vel suscipit viverra, suspendisse phasellus cursus mauris, nam purus. Scelerisque sodales. Vulputate sed neque, cum neque arcu, at a sodales arcu, aliquam fusce eget lorem porttitor vitae semper. Odio blandit dignissim, bibendum nulla voluptas congue, fermentum eu arcu bibendum mauris. Pulvinar vel erat, amet ut vivamus, wisi sed dui. Tellus odio lacinia mi tortor, cubilia ad orci vulputate rhoncus sociis, malesuada accumsan dictum non aenean.
-        </p>
-        <p>
-            Dis eu neque nulla tincidunt, cursus ac euismod sodales eros vestibulum, at nam id tincidunt in elementum nibh, amet donec ac justo nullam vitae pretium. Felis vel suspendisse, ante cum suspendisse convallis nulla in sapien, rutrum luctus commodi libero elit tincidunt. Sem libero, vel et adipiscing interdum ipsum vivamus tortor, odio dolor, neque nulla elementum, donec pretium nibh. Sed massa, ante vitae id duis eros dui, pellentesque eget rem et, dis eu mollis cras. Enim euismod ullamcorper semper per. Enim est nunc auctor pretium neque nisl, risus eget ut dolor, quisque risus amet et proin ut turpis, cras vitae, sed lectus placerat per auctor rhoncus.
-        </p>
+    </div>
+    <div id="subContent">
+        <div id="testimonial" class="span-10">
+            <h3>What Our Clients Say:</h3>
+            <blockquote>
+                <p>
+                Dis eu neque nulla tincidunt, cursus ac euismod sodales eros vestibulum, at nam id tincidunt in elementum nibh, amet donec ac justo nullam vitae pretium. Felis vel suspendisse, ante cum suspendisse convallis nulla in sapien, rutrum luctus commodi libero elit tincidunt.
+                </p>
+            </blockquote>
+        </div>
+        <div id="onTheBlog" class="span-11 last">
+            <h3>From the Blog</h3>
+            <article>
+                <h4>
+                    <a href="#">
+                        This is the first article.
+                    </a>
+                </h4>
+                <span class="authorMeta">
+                    March 18th, 2010 By John Doe
+                </span>
+                <p>
+                    Dis eu neque nulla tincidunt, cursus ac euismod sodales eros vestibulum, at nam id tincidunt in elementum nibh, amet donec ac justo nullam vitae pretium. Felis vel suspendisse, ante cum suspendisse convallis nulla in sapien, rutrum luctus commodi libero elit tincidunt.
+                </p>
+            </article>
+            <article>
+                <h4>
+                    <a href="#">
+                        This is the first article.
+                    </a>
+                </h4>
+                <span class="authorMeta">
+                    March 18th, 2010 By John Doe
+                </span>
+                <p>
+                    Sem libero, vel et adipiscing interdum ipsum vivamus tortor, odio dolor, neque nulla elementum, donec pretium nibh. Sed massa, ante vitae id duis eros dui, pellentesque eget rem et, dis eu mollis cras. Enim euismod ullamcorper semper per. Enim est nunc auctor pretium neque nisl, risus eget ut dolor, quisque risus amet et proin ut turpis, cras vitae, sed lectus placerat per auctor rhoncus.
+                </p>
+            </article>
+            <p>
+                <a href="#" class="button">More From the Blog</a>
+            </p>
+        </div>
+        <div class="clearfix"></div>
     </div>
     <!-- End div primaryContent -->
 </div>
