@@ -103,7 +103,7 @@
                 }
                 ?>
             <p>
-                <a href="#" class="button">More From the Blog</a>
+                <a href="/blog" class="button">More From the Blog</a>
             </p>
         </div>
         <div class="clearfix"></div>
